@@ -1,0 +1,53 @@
+<% include common/header.ejs %>
+
+<div class="col-5 col-sm-4 col-md-3 right_block">
+    <div class="buy-header row border-bottom justify-content-between align-items-center">
+        <h3>Замовлення<span class="badge badge-warning" id="pizzaNumber">0</span></h3><button class="btn btn-light float-right font-small clear-all">Очистити все</button>
+    </div>
+    <div class="col-12 cart" id="cart" style="height: 74%;">
+        
+    </div>
+    <div class="buy-footer border-top justify-content-between align-items-center">
+        <div class="row justify-content-between" style="margin: 0px;"><h4>Ціна</h4><h4 class="float-right total-price">0</h4></div>
+        <div class="text-center"><a class="btn btn-danger" id="toOrder" href='/order.html'>замовити</a></div>
+    </div>
+</div>
+
+<div class="col-7 col-sm-8 col-md-9 left_block">
+
+    <div class="col-md-12 psevdo_header no_padding"></div>
+    <div class="col-12 col-sm-12 col-md-12 gap"></div>
+
+    <ul class="col-12 col-sm-12 col-md-12 nav nav-pills justify-content-center navigation">
+        <li class="nav-item">
+            <a class="nav-link all" href="#">Усі</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link meat" href="#">М’ясна піца</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link pineapple" href="#">З ананасами</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link mushroom" href="#">З грибами</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link ocean" href="#">Морська піца</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link vega" href="#">Вега піца</a>
+        </li>
+    </ul>
+
+    <div class="row col-md-12" id="pizza_list">
+    </div>
+
+    <div class="col-md-9 gap"></div>
+
+    <div class="col-md-12 footer border-bottom border-top">
+        <p class="text-center">Проект PIZZA KMA - студентський проект НаУКМА.</p>
+    </div>
+</div>
+
+
+<% include common/footer.ejs %>

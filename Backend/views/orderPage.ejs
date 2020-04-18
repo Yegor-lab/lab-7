@@ -1,0 +1,76 @@
+<% include common/header.ejs %>
+
+    <div class="col-5 col-sm-4 col-md-3 right_block">
+        <div class="buy-header row border-bottom justify-content-between align-items-center">
+            <h3>Замовлення<span class="badge badge-warning" id="pizzaNumber">0</span></h3><button class="btn btn-light float-right font-small clear-all">Очистити все</button>
+        </div>
+        <div class="col-12 cart" id="cart" style="height: 74%;">
+            
+        </div>
+        <div class="buy-footer border-top justify-content-between align-items-center">
+            <div class="row justify-content-between" style="margin: 0px;"><h4>Ціна</h4><h4 class="float-right total-price">0</h4></div>
+            <div class="text-center"><a class="btn btn-light" href='/'>редагувати замовлення</a></div>
+        </div>
+    </div>
+    
+    <div class="col-7 col-sm-8 col-md-9 left_block no_padding">
+
+        <div class="col-md-12 psevdo_header no_padding"></div>
+        <div class="col-12 col-sm-12 col-md-12 gap"></div>
+
+        <form>
+            <div class="col-12 col-sm-10 col-md-8 col-lg-7 mx-auto form-group">
+                <label class="font-large">1. Контактні дані</label>
+                <div class="col-12 row align-items-center">
+                    <div class="col-5 col-sm-4 col-md-3"><label id="label-name">Ім'я</label></div>
+                    <div class="col-7 col-sm-8 col-md-9"><input type="text" class="form-control" id="i-name" placeholder="Ім'я та прізвище.."></div>
+                </div><br>
+                <div class="col-12 row align-items-center">
+                    <div class="col-5 col-sm-4 col-md-3"><label id="label-phone">Телефон</label></div>
+                    <div class="col-7 col-sm-8 col-md-9"><input type="text" class="form-control" id="i-phone" placeholder="Телефон.."></div>
+                </div><br>
+                <div class="col-12 row align-items-center">
+                    <div class="col-5 col-sm-4 col-md-3"><label id="label-address">Адреса</label></div>
+                    <div class="col-7 col-sm-8 col-md-9"><input type="text" class="form-control" id="i-address" placeholder="Адреса.."></div>
+                </div><br>
+                <div class="col-12 mx-auto border left-border-orange">
+                    <h4>Інформація про замовлення</h4><br>
+                    <p><b>Приблизний час доставки:</b> невідомий</p>
+                    <p><b>Адреса доставки:</b> невідома</p>
+                </div> <br>
+                <div id="google-map-container" class="col-12 no_padding">
+                    <div id="googleMap" class="googleMap">
+                    </div> 
+                </div> <br>
+                
+                <div class="col-12 text-right"><button class="btn btn-orange" id="next">Далі</button></div>
+            </div>
+        </form>        
+        
+
+        <div class="col-md-9 gap"></div>
+
+        <div class="col-md-12 footer border-bottom border-top">
+            <p class="text-center">Проект PIZZA KMA - студентський проект НаУКМА.</p>
+        </div>
+    </div>
+
+    <div class="col-2 col-sm-1 col-md-1 discount"><img src="assets/images/discount.png" ></div>
+
+    <!-- jQuery JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
+    
+    <!--Bootsrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAALTx4tuy3uad4iVz71FFJz58yGQkGu24&language=uk"
+    ></script>
+
+    <!-- піключаємо скрипт -->
+    <script src="https://static.liqpay.ua/libjs/checkout.js" async></script>
+
+    <!--Own JavaScript -->
+    <script type="text/javascript"  src="assets/js/order.js"> </script>
+
+    </body>
+    </html>

@@ -1,0 +1,20 @@
+<div class="bg-light row border-bottom">
+    <div class="col-9 ">
+        <h4 class="col-12 orange-heading" style="padding: 0px;"><%= pizza.title %><p class="font-small">(<%= size == "big_size" ? "Велика" : "Мала" %>)</p></h4>
+        <div class="col-12 row diameter-weight">
+            <div class="col-3 no_padding"><img src="assets/images/size-icon.svg"><%= pizza[size].size %></div><div class="col-3 no_padding"><img src="assets/images/weight.svg"><%= pizza[size].weight %></div>
+        </div> 
+        <div class=" col-12 btn-group mr-2 align-items-center items_number" style="padding:0px;" role="group" aria-label="Second group">                        
+            <div class="col-3 no_padding"><%= pizza[size].price %><p> UAH</p></div>
+            <div class="col-9 justify-content-center cart-price-container">
+                <button class="btn btn-danger minus">-</button>
+                <span class="label label-default" id="OneTypePizzaNumber"><%= quantity %></span>
+                <button class="btn btn-success plus">+</button>
+                <button class="btn btn-secondary rounded-circle delete">x</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <img class="pizza-icon" src="<%= pizza.icon %>" alt="Pizza">
+    </div>
+</div>

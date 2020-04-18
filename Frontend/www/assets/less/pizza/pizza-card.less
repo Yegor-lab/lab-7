@@ -1,0 +1,262 @@
+body {
+    min-width: 500px;
+}
+//**************************HEADER**************************
+
+.header {
+    min-width: 300px;
+
+    div {
+        padding-right: 0px;
+    }
+    .login {
+        height: auto;
+        width: 100px;
+    }
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.747);
+    height: 80px;
+    color:rgba(255, 255, 255, 0.897);
+}
+
+.psevdo_header {
+    height: 80px;
+}
+
+.semi-transparent-text {
+   color:  rgba(255, 255, 255, 0.336);
+}
+
+.home-img:hover {
+    cursor: pointer;
+}
+
+@media	(max-width:	600px)	{
+    .header {
+        font-size:	9px;	//Розмір для екранів менше 400px
+    }
+    .login {
+        width: 50px;
+    }
+}
+
+@media	(max-width:	769px)	{
+    .header {
+        font-size:	10px;	//Розмір для екранів менше 400px
+    }
+    .login {
+        width: 50px;
+    }
+}
+
+@media	(max-width:	1000px)	{
+    .header {
+        font-size:	14px;	//Розмір для екранів менше 400px
+    }
+}
+
+@media	(max-width:	1270px)	{
+    .header {
+        font-size:	15px;	//Розмір для екранів менше 400px
+    }
+}
+//**************************NAVIGATION**************************
+
+.navigation .nav-item{
+    a {
+        background: white;
+        color: @mainColor;
+    }
+    a:hover {
+        color: darkgoldenrod;
+    }
+    .active {
+        background: @mainColor;
+        color: white;
+    }
+    .active:hover {
+        color: white;
+    }
+}
+
+//**************************LEFT BLOCK**************************
+.left-block {
+    min-width: 300px;
+}
+
+.pizza-card {
+    min-width: 260px;
+    padding: 3%;
+    img {
+        width: 100%;
+    }
+
+    .diaweightprice {
+        p{
+            text-align: center;
+        }
+
+        img {
+            width: 9px;
+        }
+    }
+
+    .diaweightprice p {
+        margin-bottom: 0px;
+    }
+}
+
+//**************************RIGHT BLOCK**************************
+
+.right_block {
+    padding: 0px;
+    right: 0px;
+    position: fixed;
+    height: 100%;
+    box-shadow: -2px 0px 5px  rgba(0, 0, 0, 0.425);
+}
+
+.cart {
+    min-height: 10%;
+    @media	(max-width:	560px)	{
+        .minus, .plus, .delete {
+        width: 18px;
+        height: 18px; 	//Розмір для екранів менше 400px
+        }
+    }
+
+    @media	(max-width:	700px)	{
+        font-size: 10px;
+        h4 {
+            width: 30px;
+        }
+
+        .minus, .plus, .delete {
+        width: 20px;
+        height: 20px; 	//Розмір для екранів менше 400px
+        }
+    }
+}
+
+.buy-header, .buy-footer {
+    position: relative;
+    height: 13%;
+    padding: 5%;
+    margin: 0px;
+} 
+
+.buy-footer {
+    height: 15%;
+}
+
+.diameter-weight {
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+@media	(max-width:	400px)	{
+    .buy-header, .buy-footer {
+    font-size:	8px;	//Розмір для екранів менше 400px
+    }
+}
+
+//**************************FOOTER ELEMENTS**************************
+.discount {
+    position: fixed;
+    top: 91%;
+}
+
+.discount:hover {
+    transform: translateY(-45%);
+    transition-duration: 0.75s;
+}
+
+.discount:not(:hover) {
+    transition-duration: 0.25s;
+}
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+//**************************SUPPORTING STRUCTURES**************************
+.gap {
+    height: 20px;
+}
+
+.hr {
+    border-color: rgba(255, 255, 255, 0.336);
+    position: relative;
+    margin: 0px;
+}
+
+.orange-heading {
+    color: @mainColor;
+}
+
+.btn-orange {
+    color:white;
+    background-color: @mainColor;
+}
+
+.btn-orange:hover {
+    color:white;
+    background-color: darkgoldenrod;
+}
+
+.pizza-icon {
+    width:150px;
+}
+
+.cart-price-container {
+    button {
+        width: 27px;
+        height: 27px;
+        padding:0px;
+    }
+}
+
+.no_padding {
+    padding:0px;
+}
+
+.badge-status {
+    float: right;
+}
+
+.description {
+    height: 60px;
+}
+
+.font-small {
+    font-size: smaller;
+}
+
+.font-large {
+    font-size: larger;
+}
+
+.success {
+    color: green;
+}
+
+.fail {
+    color: red;
+}
+
+.googleMap {
+    height: 400px;
+}
+
+.pay-hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+#liqpay-result {
+    visibility: hidden;
+}
